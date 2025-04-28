@@ -187,3 +187,84 @@
 // for (const num of numArray) {
 //   console.log('Iteration number ' + num);
 // }
+
+// Functions
+
+// A JavaScript function is a block of code designed to perform a particular task
+
+// Ex: Add two numbers, multiply two numbers etc
+
+// Functions are reusable as they can be defined once and can be called with different values resulting in different results
+
+// Functions help divide a complex problem into smaller chunks and makes your program easy to understand and maintain
+
+// function name(parameter1, parameter2, parameter3) {
+// code to be executed
+//}
+
+// function greet(username) {
+//   console.log('Good morning ' + username);
+// }
+
+// greet('Bruce');
+// greet('Clark');
+// greet('Diana');
+
+// In the function definition, the input username is called a parameter.
+// When invoking the function, Bruce, Clark and Diana, are called function arguments
+
+// function add(a, b) {
+//   return a + b;
+// }
+
+// const sum = add(25, 25);
+// console.log(sum);
+
+// ARROW FUNCTIONS
+
+// const arrowSum = (a, b) => {
+//   return a + b;
+// };
+
+// const arrowSum = (a, b) => a + b;
+// const addFive = (num) => num + 5;
+// const newSum = arrowSum(25, 25);
+// console.log(newSum);
+
+// Scope
+
+// Scope basically determines the accessibility or visibility of variables
+
+// Block scope
+
+// Function scope
+
+// Global scope
+
+// Block scope dictates that variables declared inside a pair of curly braces cannot be accessed from outside the block
+
+const myNum = 100;
+const myName = 'Superman';
+if (true) {
+  const myName = 'Vishwas';
+  console.log(myName);
+  console.log(myNum);
+  // let and const variables can only be accessed inside the block they are declared in
+}
+
+// Function Scope
+// Function scope dictates that variables delared inside a function are not accessible from outside the function.
+
+function testFn() {
+  const myName = 'Batman';
+  console.log(myName);
+  console.log(myNum);
+}
+
+testFn();
+
+// Global Scope
+// Global scope is any scope outside a block or a function.
+// Global scope variable is accessible within a block or a function
+
+// A globally scoped variable will not overwrite block or function scoped variables
